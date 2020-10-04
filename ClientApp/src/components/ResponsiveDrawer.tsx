@@ -1,7 +1,7 @@
 import React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import { makeStyles, Theme, useTheme } from '@material-ui/core/styles';
 
 const useStyles = makeStyles<Theme, { drawerWidth: number }>((theme) => ({
   drawer: ({ drawerWidth }) => ({
@@ -28,6 +28,7 @@ type ResponsiveDrawerProps = {
 
 const ResponsiveDrawer: React.FC<ResponsiveDrawerProps> = ({ open, onClose, drawerWidth, children }) => {
   const classes = useStyles({ drawerWidth });
+  const theme = useTheme()
 
   return (
     <nav className={classes.drawer} aria-label="mailbox folders">
