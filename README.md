@@ -5,6 +5,7 @@ The template implements latest Redux best practices by using the official toolki
 
 ## Features
 
+- ⚙ TypeScript
 - ⚛️ React
 - 🧰 Redux + Redux Toolkit
 - 🚸 React Router V6 (beta) 
